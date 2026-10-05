@@ -1,0 +1,22 @@
+{
+  "name": "studio-tools-engines",
+  "version": "1.0.0",
+  "description": "Client-side engines powering the free tools on studio-tools.online. 100% local - everything runs in the visitor's browser, nothing leaves the device.",
+  "license": "MIT",
+  "private": false,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node run-all-tests.js"
+  },
+  "keywords": [
+    "client-side",
+    "local",
+    "privacy",
+    "calculators",
+    "converters",
+    "generators"
+  ],
+  "devDependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
