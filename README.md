@@ -1,5 +1,7 @@
 # studio-tools-engines
 
+![CI](https://github.com/ChopCookies/studio-tools-engines/actions/workflows/ci.yml/badge.svg)
+
 **The client-side engines that power the free tools on [studio-tools.online](https://studio-tools.online).**
 
 Everything in this repository runs **100% in the visitor's browser**. Every calculator, converter and generator shipped here processes its input locally: files, text and numbers never leave the device, and nothing is uploaded to a server. This repository is the public, reviewable proof of that claim.
@@ -56,7 +58,7 @@ The engines are IIFEs: they expose pure, testable functions via `module.exports`
 | [`brueckentage-planer`](https://studio-tools.online/brueckentage-planer) | Brueckentage-Planer | Bridge Days Planner |
 | [`cron-generator`](https://studio-tools.online/cron-generator) | Cron-Generator | Cron Generator |
 | [`dead-pixel-test`](https://studio-tools.online/dead-pixel-test) | Toter-Pixel-Test | Dead Pixel Test |
-| [`encoding-reparatur`](https://studio-tools.online/encoding-reparatur) | encoding-reparatur |  |
+| [`encoding-reparatur`](https://studio-tools.online/encoding-reparatur) | Encoding-Reparatur | Encoding Repair (Mojibake fixer) |
 | [`ersparnis-ziel-rechner`](https://studio-tools.online/ersparnis-ziel-rechner) | Sparziel Rechner | Savings Goal Calculator |
 | [`erstausstattung-rechner`](https://studio-tools.online/erstausstattung-rechner) | Erstausstattung Rechner | First Apartment Setup Calculator |
 | [`fahrkosten-rechner`](https://studio-tools.online/fahrkosten-rechner) | Fahrkosten-Rechner | Mileage Calculator |
@@ -64,20 +66,20 @@ The engines are IIFEs: they expose pure, testable functions via `module.exports`
 | [`gehalt-rechner`](https://studio-tools.online/gehalt-rechner) | Gehaltsrechner (Brutto-Netto) | Salary Calculator (Gross to Net) |
 | [`hauskauf-nebenkosten`](https://studio-tools.online/hauskauf-nebenkosten) | Hauskauf-Nebenkosten-Rechner | Home Buying Ancillary Costs Calculator |
 | [`haustier-kosten-rechner`](https://studio-tools.online/haustier-kosten-rechner) | Haustierkosten-Rechner | Pet Cost Calculator |
-| [`image-resizer`](https://studio-tools.online/image-resizer) | Bild Resizer | Größe ändern, zuschneiden & drehen | Image Resizer | Resize, crop & rotate |
-| [`ipv6-rechner`](https://studio-tools.online/ipv6-rechner) | ipv6-rechner |  |
+| [`image-resizer`](https://studio-tools.online/image-resizer) | Bild Resizer \| Größe ändern, zuschneiden & drehen | Image Resizer \| Resize, crop & rotate |
+| [`ipv6-rechner`](https://studio-tools.online/ipv6-rechner) | IPv6-Rechner | IPv6 Calculator |
 | [`kredit-rechner`](https://studio-tools.online/kredit-rechner) | Kredit Rechner | Loan Calculator |
 | [`kuendigungsfrist-rechner`](https://studio-tools.online/kuendigungsfrist-rechner) | Kündigungsfrist-Rechner | Notice Period Calculator (Employment) |
 | [`meta-tags-generator`](https://studio-tools.online/meta-tags-generator) | Meta-Tags-Generator | Meta Tags Generator |
 | [`miet-finanzcheck`](https://studio-tools.online/miet-finanzcheck) | Miet-Finanzcheck | Rent Affordability Check |
 | [`mikrofon-test`](https://studio-tools.online/mikrofon-test) | Mikrofon-Test | Microphone Tester |
 | [`mortgage-calculator`](https://studio-tools.online/mortgage-calculator) | Baufinanzierungsrechner | Mortgage Calculator |
-| [`netzwerk-port-nachschlagewerk`](https://studio-tools.online/netzwerk-port-nachschlagewerk) | netzwerk-port-nachschlagewerk |  |
-| [`netzwerk-verbindung-info`](https://studio-tools.online/netzwerk-verbindung-info) | netzwerk-verbindung-info |  |
+| [`netzwerk-port-nachschlagewerk`](https://studio-tools.online/netzwerk-port-nachschlagewerk) | Netzwerk-Port-Nachschlagewerk | Network Port Reference |
+| [`netzwerk-verbindung-info`](https://studio-tools.online/netzwerk-verbindung-info) | Netzwerk-Verbindungs-Info | Network Connection Info |
 | [`notgroschen-rechner`](https://studio-tools.online/notgroschen-rechner) | Notgroschen Rechner | Emergency Fund Calculator |
 | [`pendel-rechner`](https://studio-tools.online/pendel-rechner) | Pendel-Rechner | Commute Calculator |
 | [`pendlerpauschale-rechner`](https://studio-tools.online/pendlerpauschale-rechner) | Pendlerpauschale-Rechner | Commuter Allowance Calculator |
-| [`picture-element-generator`](https://studio-tools.online/picture-element-generator) | picture-element-generator |  |
+| [`picture-element-generator`](https://studio-tools.online/picture-element-generator) | Picture-Element-Generator | Picture Element Generator |
 | [`qr-code-reader`](https://studio-tools.online/qr-code-reader) | QR-Code-Reader: QR-Code aus Bild lesen | QR Code Reader: read a QR code from an image |
 | [`refresh-rate-test`](https://studio-tools.online/refresh-rate-test) | Bildwiederholrate messen | Refresh Rate Test |
 | [`reisebudget-rechner`](https://studio-tools.online/reisebudget-rechner) | Reisebudget-Rechner | Travel Budget Calculator |
@@ -88,7 +90,7 @@ The engines are IIFEs: they expose pure, testable functions via `module.exports`
 | [`social-media-snippets`](https://studio-tools.online/social-media-snippets) | Social Media Snippets | Social Media Snippets |
 | [`solar-wartungskosten`](https://studio-tools.online/solar-wartungskosten) | Solar Wartungskosten-Rechner | Solar Maintenance & Repair Cost Estimator |
 | [`stromkosten-rechner`](https://studio-tools.online/stromkosten-rechner) | Stromkosten-Rechner | Electricity Cost Calculator |
-| [`subnet-rechner`](https://studio-tools.online/subnet-rechner) | subnet-rechner |  |
+| [`subnet-rechner`](https://studio-tools.online/subnet-rechner) | IPv4-Subnetz-Rechner | IPv4 Subnet Calculator |
 | [`text-diff`](https://studio-tools.online/text-diff) | Text-Diff: Zwei Texte vergleichen | Text Diff: Compare two texts |
 | [`typing-trainer`](https://studio-tools.online/typing-trainer) | Tipp-Trainer | Typing Trainer |
 | [`umzugskosten-rechner`](https://studio-tools.online/umzugskosten-rechner) | Umzugskosten Rechner | Moving Cost Calculator |
@@ -102,7 +104,7 @@ The engines are IIFEs: they expose pure, testable functions via `module.exports`
 | [`word-formatierung-entfernen`](https://studio-tools.online/word-formatierung-entfernen) | Word Formatierung entfernen | Remove Word Formatting |
 | [`zinseszins-rechner`](https://studio-tools.online/zinseszins-rechner) | Zinseszins-Rechner | Compound Interest Calculator |
 
-Engines whose title is just their slug are internal/generic tools; the German and English display names are set on the site itself.
+Every tool listed above is published as a single browser engine under `public/assets/js/<slug>.js` with a matching Node test under `scripts/`. Some engines rely on shared site libraries (e.g. `lib/image-utils.js`, `lib/ffmpeg-utils.js`) or CDN resources (pdf-lib, JSZip, QRCode) that are loaded by the site and are not duplicated here.
 
 ## Privacy model
 

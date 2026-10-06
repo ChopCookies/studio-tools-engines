@@ -4,6 +4,7 @@
 const path = require('path');
 const assert = require('assert');
 const fs = require('fs');
+const os = require('os');
 
 // Minimal DOM/URL/atob stubs so requiring the tool doesn't throw on buildUI()
 global.window = { __siteLang: 'de' };
@@ -109,6 +110,7 @@ console.log('Layout tests passed.');
   const isA4 = sizes.every(s => (Math.abs(s[0]-a4p[0])<1 && Math.abs(s[1]-a4p[1])<1) || (Math.abs(s[0]-a4l[0])<1 && Math.abs(s[1]-a4l[1])<1));
   assert.ok(isA4, 'all pages are A4 (portrait or landscape)');
   console.log('PDF build OK. Page sizes:', JSON.stringify(sizes));
-  fs.writeFileSync('/tmp/a4-bilder-zu-pdf-test.pdf', bytes);
-  console.log('Wrote /tmp/a4-bilder-zu-pdf-test.pdf');
+  const outPdf = path.join(os.tmpdir(), 'a4-bilder-zu-pdf-test.pdf');
+  fs.writeFileSync(outPdf, bytes);
+  console.log('Wrote ' + outPdf);
 })();
